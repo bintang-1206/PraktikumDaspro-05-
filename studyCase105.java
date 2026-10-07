@@ -14,6 +14,24 @@ public class studyCase105 {
         moneyPayment = input.nextInt();
         totalPrice = pricePerCup * amountCup;
 
-       
+        if (totalPrice >= 50000) {
+            discount = totalPrice * 10 / 100;
+        } else {
+            discount = 0;
+        }
+        totalPayment = totalPrice - discount;
+
+        System.out.println("Total price\t: " + totalPrice);
+        System.out.println("Discount\t: " + discount);
+        System.out.println("Total payment\t: " + totalPayment);
+
+        if (moneyPayment >= totalPayment) {
+            change = moneyPayment - totalPayment;
+            System.out.println("Change\t\t: " + change);
+        } else {
+            notEnough = totalPayment - moneyPayment;
+            System.out.println("Not enough money, you need: " + notEnough);
+        }
+        input.close();
     }
 }
