@@ -14,7 +14,7 @@ public class studyCase105 {
         moneyPayment = input.nextInt();
         totalPrice = pricePerCup * amountCup;
 
-        if (totalPrice >= 50000) {
+        if (totalPrice >= 100000) {
             discount = totalPrice * 10 / 100;
         } else {
             discount = 0;
