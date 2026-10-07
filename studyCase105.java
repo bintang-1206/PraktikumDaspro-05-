@@ -3,7 +3,7 @@ public class studyCase105 {
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
-        int  pricePerCup = 18000;
+        int pricePerCup = 18000;
         int amountCup, moneyPayment;
         int totalPrice, discount, totalPayment;
         int change, notEnough;
